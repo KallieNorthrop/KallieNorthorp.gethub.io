@@ -1,4 +1,4 @@
-# KallieNorthorp.gethub.io
+# KallieNorthrop.gethub.io
 
 # My Portfolio
 
