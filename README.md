@@ -5,4 +5,5 @@
 This repository hosts my professional GitHub portfolio for IS 3060.
 
 Website:
-https://KallieNorthrop.github.io
+[https://KallieNorthrop.github.io
+](https://kallienorthrop.github.io/KallieNorthorp.gethub.io/)
