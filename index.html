@@ -3,10 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kallie Northrop | Communication Studies Student</title>
+
+    <style>
+
+        /* ---------- GENERAL STYLING ---------- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+            color: #263238;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ---------- NAVIGATION ---------- */
+
+        nav {
+            background-color: #243b53;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #9fb3c8;
+        }
+
+        /* ---------- HERO / HEADER ---------- */
+
+        header {
+            background: linear-gradient(135deg, #243b53, #486581);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #d9e2ec;
+        }
+
+        /* ---------- SECTIONS ---------- */
+
+        section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        section h2 {
+            color: #243b53;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #9fb3c8;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* ---------- ABOUT ---------- */
+
+        #about p {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ---------- SKILLS ---------- */
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #d9e2ec;
+            color: #243b53;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .skills-list li:hover {
+            background-color: #9fb3c8;
+            color: white;
+        }
+
+        /* ---------- PROJECTS ---------- */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #243b53;
+            margin-bottom: 10px;
+        }
+
+        /* ---------- RESUME ---------- */
+
+        .resume-box {
+            background-color: #d9e2ec;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* ---------- CONTACT ---------- */
+
+        .contact-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-box p {
+            margin-bottom: 12px;
+        }
+
+        .contact-box a {
+            color: #486581;
+            font-weight: bold;
+        }
+
+        .contact-box a:hover {
+            color: #243b53;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background-color: #243b53;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        /* ---------- MOBILE RESPONSIVE DESIGN ---------- */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header {
+                padding: 70px 20px;
+            }
+
+            header h1 {
+                font-size: 2.3rem;
+            }
+
+            header h2 {
+                font-size: 1.2rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                margin: 40px auto;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Kallie Northrop</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
 
     <!-- Header -->
     <header>
@@ -15,10 +263,10 @@
         <p>Business Administration Minor</p>
     </header>
 
-    <hr>
 
     <!-- About Me -->
-    <section>
+    <section id="about">
+
         <h2>About Me</h2>
 
         <p>
@@ -33,15 +281,16 @@
             communication. Through my coursework and professional experiences, I hope to
             continue developing both my communication skills and technical abilities.
         </p>
+
     </section>
 
-    <hr>
 
     <!-- Skills -->
-    <section>
+    <section id="skills">
+
         <h2>Skills</h2>
 
-        <ul>
+        <ul class="skills-list">
             <li>Communication</li>
             <li>Public Relations</li>
             <li>Marketing</li>
@@ -51,91 +300,103 @@
             <li>Microsoft Excel</li>
             <li>HTML</li>
             <li>AI Prompt Engineering</li>
-            <li>Writing and Editing</li>
+            <li>Writing & Editing</li>
         </ul>
+
     </section>
 
-    <hr>
 
     <!-- Projects -->
-    <section>
+    <section id="projects">
+
         <h2>Projects</h2>
 
-        <table border="1">
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-            </tr>
+        <div class="projects">
 
-            <tr>
-                <td>AI Business Analysis</td>
-                <td>
+            <div class="project-card">
+                <h3>AI Business Analysis</h3>
+                <p>
                     Analyze business information and explore how AI can improve
                     decision-making and organizational processes.
-                </td>
-            </tr>
+                </p>
+            </div>
 
-            <tr>
-                <td>Communication Campaign</td>
-                <td>
+            <div class="project-card">
+                <h3>Communication Campaign</h3>
+                <p>
                     Develop a communication or public relations campaign designed
                     to reach a specific audience.
-                </td>
-            </tr>
+                </p>
+            </div>
 
-            <tr>
-                <td>Web Development</td>
-                <td>
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>
                     Create and develop a personal professional website using HTML,
                     CSS, and other web technologies.
-                </td>
-            </tr>
+                </p>
+            </div>
 
-            <tr>
-                <td>AI-Assisted Workflow</td>
-                <td>
+            <div class="project-card">
+                <h3>AI-Assisted Workflow</h3>
+                <p>
                     Explore how artificial intelligence can be used to improve
                     productivity and professional communication.
-                </td>
-            </tr>
-        </table>
+                </p>
+            </div>
+
+        </div>
+
     </section>
 
-    <hr>
 
     <!-- Resume -->
-    <section>
+    <section id="resume">
+
         <h2>Resume</h2>
 
-        <p>Resume coming soon.</p>
+        <div class="resume-box">
+            <p>Resume coming soon.</p>
+        </div>
+
     </section>
 
-    <hr>
 
     <!-- Contact -->
-    <section>
+    <section id="contact">
+
         <h2>Contact</h2>
 
-        <p>
-            <strong>Email:</strong>
-            u1492359@utah.edu
-        </p>
+        <div class="contact-box">
 
-        <p>
-            <strong>LinkedIn:</strong>
-            <a href="#">LinkedIn Profile</a>
-        </p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:u1492359@utah.edu">
+                    u1492359@utah.edu
+                </a>
+            </p>
 
-        <p>
-            <strong>GitHub:</strong>
-            <a href="#">https://github.com/KallieNorthrop/KallieNorthorp.gethub.io/tree/main</a>
-        </p>
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="#">LinkedIn Profile</a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/KallieNorthrop/KallieNorthorp.gethub.io/tree/main"
+                   target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
     </section>
 
-    <hr>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Kallie Northrop</p>
+        <p>&copy; 2026 Kallie Northrop | Professional Portfolio</p>
     </footer>
 
 </body>
